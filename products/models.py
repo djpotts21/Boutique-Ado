@@ -1,6 +1,8 @@
 from django.db import models
 
 class Category(models.Model):
+    class Meta:
+        verbose_name_plural = 'Categories' # This will change the name of the model in the admin panel to "Categories" instead of "Categorys"
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
     
