@@ -3,17 +3,19 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Product
 
+
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all() # Gets all products from the database
+    products = Product.objects.all()  # Gets all products from the database
     query = None
 
     if request.GET:
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, 
+                               "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
