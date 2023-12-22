@@ -103,3 +103,8 @@ body {
         height: calc(100vh - 116px);
     }
 }
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
