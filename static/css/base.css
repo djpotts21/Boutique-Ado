@@ -60,6 +60,12 @@ body {
     background: #000 !important;
 }
 
+.btn-outline-black {
+    background: white;
+    border: 1px solid black;
+    color: black !important;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
