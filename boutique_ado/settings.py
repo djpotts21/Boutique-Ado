@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-okbcijwcm-yyrp91sj)i+=em6ioq!np@s7l()gfp2wq&anp2_1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-djpotts21-boutiqueado-7u738bfe6ck.ws-eu107.gitpod.io', 'localhost']
 
 
 # Application definition
@@ -165,5 +165,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
+
+# Stripe
+STRIPE_CURRENCY = 'gbp'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
