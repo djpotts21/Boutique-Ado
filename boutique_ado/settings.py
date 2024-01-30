@@ -80,7 +80,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media', # added to make media available across the site
-                'bag.context.bag_contents', # added to make bag contents available across the site
+                'bag.contexts.bag_contents', # added to make bag contents available across the site
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
