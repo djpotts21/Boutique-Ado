@@ -26,7 +26,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-8">
                 <div class="order-confirmation-wrapper p-2 bord">
                 <!-- Order Info-->
                     <div class="row">
@@ -63,10 +63,10 @@
                     {% for item in order.lineitems.all %}
 
                     <div class="row">
-                        <div class="col-12 col-md-8">
+                        <div class="col-12 col-md-4">
                            <p class="small mb-0 text-black font-weight-bold" >{{ item.product.name}}{% if item.product_size %} - Size {{ item.product_size | upper }}{% endif %}</p>
                         </div>
-                        <div class="col-12 col-md-4 text-md-right">
+                        <div class="col-12 col-md-8 text-md-right">
                             <p class="mb-0">{{item.quantity}} @ £{{ item.product.price}} each</p>
                         </div>
                     </div>
