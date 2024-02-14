@@ -184,3 +184,6 @@ DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+import django_heroku
+django_heroku.settings(locals())
