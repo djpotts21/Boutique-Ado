@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-djpotts21-boutiqueado-7u738bfe6ck.ws-eu108.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['daniel-boutique-ado-283bf1e485d8.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -185,5 +185,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
-import django_heroku
-django_heroku.settings(locals())
